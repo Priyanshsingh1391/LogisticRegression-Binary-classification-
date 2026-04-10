@@ -14,8 +14,10 @@ model = LogisticRegression()
 model.fit(X_train,y_train)
 
 prediction = model.predict(X_test)
+prediction2 = model.predict([[22]])
 
 print(prediction)
+print(prediction2)
 
 # to check the accuracy of the model
 acc= model.score(X_test,y_test)
